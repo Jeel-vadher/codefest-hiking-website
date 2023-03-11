@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <title>Hiking</title>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+            color: #333;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .firstpage {
+            position: relative;
+            width: 100%;
+        }
+
+        .in {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            width: 100%;
+            font-family: 'Tilt Prism', cursive;
+            font-size: 70px;
+        }
+
+        .trails-section {
+            padding: 4rem;
+            text-align: center;
+            background-color: beige;
+        }
+
+        .trails-section h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            border-style: double;
+        }
+
+        .trail-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .trail-card {
+            width: 300px;
+            margin-right: 2rem;
+            text-align: center;
+
+        }
+
+        .trail-card {
+            width: 300px;
+            margin-right: 2rem;
+            text-align: center;
+        } 
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 4rem;
+        }
+
+        nav a {
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f7b731;
+        }
+
+        header {
+            height: 18vh;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1532397574028-a338a2a4d0be?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #d4a3a3;
+        }
+
+        .contr h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 4rem;
+        }
+
+        .form-container {
+            max-width: 50%;
+            margin-right: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            border: none;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            resize: none;
+        }
+
+        textarea {
+            height: 10rem;
+        }
+
+        button[type="submit"] {
+            background-color: #f7b731;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ffdd59;
+        }
+
+        .contact-info {
+            max-width: 40%;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-left: 1rem;
+        }
+
+        .contact-info li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logobar">
+                <a class="logobar">
+                    <img src="logo.png" alt="Logo" width="40" height="50" class="d-inline-block align-text-top" />
+                </a>
+            </div>
+        </nav>
+        <h1>Hiking Adventure</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Package</a>
+
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <div class="firstpage">
+        <img src="firstpage.jpg" height="80%" width="100%" />
+        <div class="in">
+            <p>LIVE YOUR LIFE & FORGET YOUR AGE</p>
+        </div>
+    </div>
+    <section class="trails-section">
+        <h2>Popular Trails</h2>
+        <div class="trail-cards">
+            <div class="trail-card">
+                <img src="mount everest.jpg" alt="Trail" height="263px" width="250">
+                <h3>Mount Everest</h3>
+                <p>Difficulty: Expert</p>
+                <P>Price : Lorem, ipsum dolor.</P>
+            </div>
+            <div class="trail-card">
+                <img src="grant canyo.jpg" alt="Trail" height="263px" width="250">
+                <h3>Grand Canyon</h3>
+                <p>Difficulty: Moderate</p>
+                <P>Price : Lorem, ipsum dolor.</P>
+            </div>
+            <div class="trail-card">
+                <img src="rishikesh.jpg" alt="Trail" height="263px" width="250">
+                <h3>Rishikesh</h3>
+                <p>Difficulty: Moderate</p>
+                <P>Price : Lorem, ipsum dolor.</P>
+            </div>
+    </section>
+    <h1>Contact Us</h1>
+    <main>
+        <div class="cont">
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><strong>Address:</strong> Lorem ipsum dolor sit.</li>
+                    <li><strong>Email:</strong> Lorem, ipsum dolor@.com</li>
+                    <li><strong>Phone:</strong> (555) 123-4567</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hiking Adventures</p>
+    </footer>
+
+
+</body>
+
+</html>
